@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #010409 !important;
 }
 
 code {
@@ -18,40 +19,82 @@ code {
 }
 .container {
   max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
 }
-.info-container {
-  max-width: 600px;
+.main-container {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  width: 100%;
+  align-items: baseline;
+  border-bottom: 1px solid #30363d;
+  padding: 35px 0;
+}
+.user-link {
+  color: #0d1117;
+  text-decoration: none;
+}
+.user-link:hover {
+  text-decoration: underline;
+  color: #58a6ff;
+}
+.info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 12px 0;
 }
 .username-para {
   border: 1px solid black;
   background-color: #eee;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 19px;
   border-radius: 50%;
   width: 68px;
   padding: 19px;
   margin-right: 8px;
 }
+.username-para:hover {
+  border-color: #c9d1d9;
+  box-shadow: 0px 0px 19px 4px rgb(212 214 215 / 58%);
+}
 .name-para {
-  font-weight: 500;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0 0 25px 8px;
+  color: #c9d1d9;
 }
 .card {
+  border-radius: 8px !important;
   border-color: #30363d !important;
   background-color: #0d1117 !important;
-  padding: 0 12px;
-  margin: 5px 9px;
+  padding: 0;
+}
+.card-body {
+  padding: 16px !important;
+  background: #0d1117;
+  border-radius: 8px !important;
 }
 .title {
-  color: #fff;
-  font-weight: 400 !important;
+  color: #c9d1d9;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  cursor: pointer;
+  margin-bottom: 15px !important;
+}
+.title:hover {
+  color: #58a6ff;
 }
 .description {
-  color: #c9d1d9;
-  font-size: 14px !important;
-  font-weight: 300;
+  color: #8b949e;
+  font-size: 18px !important;
+  font-weight: 400;
+  margin-bottom: 21px !important;
+}
+.date {
+  color: #8b949e !important;
+  font-size: 15px !important;
 }

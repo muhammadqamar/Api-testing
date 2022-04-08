@@ -5,8 +5,8 @@ const Index = () => {
   return (
     <>
       <div className="container">
-        {Api.data.nodes.map((item) => (
-          <Card key={item} data={item} />
+        {Api.data.nodes.map((item, counter) => (
+          <Card key={counter} data={item} />
         ))}
       </div>
     </>

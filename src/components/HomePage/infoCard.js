@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 const InfoCard = ({ data }) => {
   return (
     <div className="main-container">
-      <a href={data.issue.id} className="user-link" target="_blank">
+      <a href={data.issue.webUrl} className="user-link" target="_blank">
         <p className="username-para">
           {data.user.username.slice(0, 2).toUpperCase()}
         </p>

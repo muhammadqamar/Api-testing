@@ -1,5 +1,6 @@
 import React from "react";
 import { Api } from "../../Data/demiApi";
+import About from "./about";
 import Card from "./infoCard";
 const Index = () => {
   return (
@@ -9,6 +10,7 @@ const Index = () => {
           <Card key={counter} data={item} />
         ))}
       </div>
+      <About />
     </>
   );
 };
